@@ -1,0 +1,16 @@
+<div class="item" style="position: relative;" id="<%= id %>">
+    <% if (hasIcon) { %>
+        <% if (icon) { %>
+        <img src="<%= icon %>" alt="">
+        <% } else { %>
+        <img src="../assets/phone.png" alt="">
+        <% } %>
+    <% } else { %>
+    <% } %>
+    <p><%= title %></p>
+    <div class="pop-over" id="popover<%= id %>">
+        <%= text %>
+    </div>
+
+    <div class="arrow" id="arrow<%= id %>"></div>
+</div>
